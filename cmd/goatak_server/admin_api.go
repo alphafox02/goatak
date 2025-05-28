@@ -122,7 +122,7 @@ func (h *HttpServer) getAdminLoginHandler() func(c *fiber.Ctx) error {
 			}
 
 			h.log.Warn("invalid login", "user", login)
-			errText = "неправильный пароль"
+			errText = "incorrect password"
 		}
 
 		return c.Render("templates/login", fiber.Map{"login": login, "error": errText})
@@ -462,16 +462,16 @@ func getApiDevicePostHandler(app *App) fiber.Handler {
 		}
 
 		if m.Login == "" {
-			return ctx.JSON(fiber.Map{"error": "пустой логин"})
-		}
+    		    return ctx.JSON(fiber.Map{"error": "empty login"})
+                }
 
-		if m.Password == "" {
-			return ctx.JSON(fiber.Map{"error": "пустой пароль"})
-		}
+                if m.Password == "" {
+                    return ctx.JSON(fiber.Map{"error": "empty password"})
+                }
 
-		if m.Scope == "" {
-			return ctx.JSON(fiber.Map{"error": "пустой scope"})
-		}
+                if m.Scope == "" {
+                    return ctx.JSON(fiber.Map{"error": "empty scope"})
+                }
 
 		d := &model.Device{
 			Login:     m.Login,
