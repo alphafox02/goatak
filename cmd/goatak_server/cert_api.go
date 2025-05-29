@@ -72,7 +72,7 @@ func (api *CertAPI) Listen() error {
 }
 
 func getTLSConfigHandler(app *App) fiber.Handler {
-	names := map[string]string{"C": "RU", "ST": "RU", "L": "SPB", "O": "goatak", "OU": "goatak"}
+	names := map[string]string{"C": "US", "ST": "CA", "L": "San Francisco", "O": "goatak", "OU": "goatak"}
 	buf := strings.Builder{}
 	buf.WriteString("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n")
 	buf.WriteString(fmt.Sprintf("<certificateConfig validityDays=\"%d\"><nameEntries>", app.config.CertTTLDays()))
