@@ -1,6 +1,6 @@
-# GoATAK Fork Goals- free ATAK/CivTAK server & client
+# GoATAK Fork Goals- free ATAK/CivTAK server
 
-This fork of GoATAK is meant only to evaluate the server aspect only as a map for CoT. Please see the original GoATAK for anything else. 
+This fork of GoATAK is meant to evaluate the server aspect only as a map for CoT. Please see the original GoATAK for anything else. 
 
 ## GoATAK server features
 
