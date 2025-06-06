@@ -1,25 +1,6 @@
-# GoATAK - free ATAK/CivTAK server & client
+# GoATAK Fork Goals- free ATAK/CivTAK server & client
 
-This is fast & simple implementation of TAK server/CoT router and ATAK client with web interface.
-
-- [Wiki](https://github.com/kdudkov/goatak/wiki)
-- Support chat in Telegram: [@ru_atak](https://t.me/ru_atak)
-
-binary builds can be downloaded
-from [releases page](https://github.com/kdudkov/goatak/releases)
-
-## Free public server
-
-We offer a [public TAK server](https://takserver.ru) for the community free of charge. Credentials to join test group:
-
-* address: `takserver.ru`
-* set `Enroll for Client Certificate`
-* user `test`
-* password `111111`
-
-iTAK connect qr-code:
-
-![QR](img/qr.png?raw=true "QR")
+This fork of GoATAK is meant only to evaluate the server aspect only as a map for CoT. Please see the original GoATAK for anything else. 
 
 ## GoATAK server features
 
