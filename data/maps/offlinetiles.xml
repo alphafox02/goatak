@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customMapSource>
+    <name>OfflineTiles</name>
+    <minZoom>1</minZoom>
+    <maxZoom>10</maxZoom>
+    <tileType>PNG</tileType>
+    <tileUpdate>IfNoneMatch</tileUpdate>
+    <url>http://localhost:8085/{$z}/{$x}/{$y}.png</url>
+    <backgroundColor>#000000</backgroundColor>
+</customMapSource>
