@@ -585,6 +585,12 @@ func getTakWsHandler(app *App) fiber.Handler {
 func getDefaultLayers() []map[string]any {
 	return []map[string]any{
 		{
+			"name":    "OSM Offline",
+			"url":     "http://localhost:8085/{z}/{x}/{y}.png",
+			"maxzoom": 10,
+			"parts":   []string{"a", "b", "c"},
+		},
+		{
 			"name":    "OSM",
 			"url":     "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
 			"maxzoom": 19,
