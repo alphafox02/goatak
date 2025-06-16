@@ -586,7 +586,7 @@ func getDefaultLayers() []map[string]any {
 	return []map[string]any{
 		{
 			"name":    "OSM Offline",
-			"url":     "http://localhost:8085/{z}/{x}/{y}.png",
+			"url":     "/tiles/{z}/{x}/{y}.png",
 			"maxzoom": 10,
 			"parts":   []string{"a", "b", "c"},
 		},
