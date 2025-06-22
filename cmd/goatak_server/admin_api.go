@@ -608,10 +608,5 @@ func getDefaultLayers() []map[string]any {
 			"maxzoom": 20,
 			"parts":   []string{"0", "1", "2", "3"},
 		},
-		{
-			"name":    "Yandex maps",
-			"url":     "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x={x}&y={y}&z={z}&scale=2&lang=ru_RU&projection=web_mercator",
-			"maxzoom": 20,
-		},
 	}
 }
